@@ -1,0 +1,30 @@
+body{
+    display: flex;
+    margin: 0;
+}
+
+.logo-container{
+    flex: 1;
+    background: url("nima-sarram-G5oJ4BiqUP0-unsplash.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+
+.logo img{
+    width: 50px;
+    height: 50px;
+}
+
+.logo{
+    background-color: #53635d18;
+    text-align: center;
+    margin-top: 16vh;
+    padding-top: .4em;
+    padding-bottom: .4em ;
+    font-size: 60px;
+    font-family: "MuseoModerno", serif;
+}
+
+.form-container{
+    flex: 2;
+}
