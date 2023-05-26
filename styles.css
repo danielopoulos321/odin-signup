@@ -1,6 +1,10 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
 body{
     display: flex;
-    margin: 0;
 }
 
 .logo-container{
@@ -38,4 +42,37 @@ body{
 
 .form-container{
     flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #f6ebe54f;
+}
+
+.blurb{
+    flex: 1;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.5rem;
+}
+
+.blurb p{
+    padding-bottom: 2em;
+}
+
+.form{
+    background-color: #53635d18;
+    flex: 1;
+    border-radius: 0 2em 2em 0;
+}
+
+.logIn{
+    flex: 1;
+}
+
+.center{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10%;
+    padding-right: 30%;
 }
