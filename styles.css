@@ -108,10 +108,16 @@ form{
     margin-bottom: .7em;
 }
 
+input:focus{
+    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.424);
+    outline: var(--theme-blue) solid 1px;
+}
+
 .item input{
     box-sizing: border-box;
     margin-right: 10%;
     margin-top: .5em;
+    padding-left: 1em;
     height: 2em;
     border-radius: .5em;
     border: 1px solid var(--theme-blue);
