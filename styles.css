@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    --theme-blue: #1F5D7C;
 }
 
 body{
@@ -10,7 +11,7 @@ body{
 
 a{
     text-decoration: none;
-    color: #1F5D7C;
+    color: var(--theme-blue);
 }
 
 .logo-container{
@@ -18,7 +19,7 @@ a{
     background: url("nima-sarram-G5oJ4BiqUP0-unsplash.jpg");
     background-position: 50%;
     background-size: cover;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .logo-container img{
@@ -34,7 +35,7 @@ a{
     justify-content: center;
     background-color: #53635d18;
     text-align: center;
-    margin-top: 16vh;
+    margin-top: 16.5vh;
     padding-top: .4em;
     padding-bottom: .4em ;
     font-size: 65px;
@@ -44,7 +45,7 @@ a{
 .odin{
     padding-left: .2em;
     padding-right: .2em;
-    color: #1F5D7C;
+    color: var(--theme-blue);
 }
 
 .form-container{
@@ -60,14 +61,21 @@ a{
     font-size: 1.5rem;
 }
 
-.blurb p{
-    padding-bottom: 2em;
+h2{
+    padding-top: .5em;
+    padding-bottom: .5em;
 }
+
+.topPar{
+    padding-top: 3em;
+    padding-bottom: 1em;
+}
+
 
 .form{
     background-color: #53635d18;
     flex: 1;
-    box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.219);
 }
 
 .logIn{
@@ -96,15 +104,17 @@ form{
     flex-direction: column;
     width: 100%;
     flex: 50%;
+    margin-top: .7em;
+    margin-bottom: .7em;
 }
 
 .item input{
     box-sizing: border-box;
     margin-right: 10%;
-    margin-bottom: 5%;
+    margin-top: .5em;
     height: 2em;
     border-radius: .5em;
-    border: 1px solid #1F5D7C;
+    border: 1px solid var(--theme-blue);
     background: whitesmoke;
 }
 
@@ -123,7 +133,11 @@ input[type="submit"]{
 
 input[type="submit"]:hover,
 input[type="submit"]:active{
-    border: 2px solid #1F5D7C;
+    border: 2px solid var(--theme-blue);
     background: #1f5d7c52;
-    color: #1F5D7C;
+    color: var(--theme-blue);
+}
+
+input[type="submit"] + p{
+    padding-bottom: 2em;
 }
