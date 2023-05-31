@@ -37,24 +37,25 @@
                 </div>
                 <div class="item">
                     <label for="email">Email</label>
-                    <input type="text" id="email" name="email">
+                    <input type="email" id="email" name="email" required>
                 </div>
                 <div class="item">
                     <label for="tel">Phone Number</label>
-                    <input type="tel" name="tel" id="tel">
+                    <input type="tel" name="tel" id="tel" required>
                 </div>
                 <div class="item">
                     <label for="pwd">Password</label>
-                    <input type="password" id="pwd" name="password">
+                    <input type="password" id="pwd" name="password" required>
                 </div>
                 <div class="item">
                     <label for="pwd-confirm">Confirm Password</label>
-                    <input type="password" id="pwd-confirm">
+                    <input type="password" id="pwd-confirm" required>
                 </div>
             </form>
+            <span>* Please fill out the required boxes</span>
         </div>
         <div class="logIn padd">
-            <input type="submit" form="myForm">
+            <button type="submit" form="myForm">Submit</button>
             <p>Already have an account? <a href="">Log In</a></p>
         </div>
     </div>

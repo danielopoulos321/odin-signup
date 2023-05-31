@@ -113,7 +113,7 @@ input:focus{
     outline: rgb(45, 168, 255) solid 1px;
 }
 
-.item input{
+input{
     box-sizing: border-box;
     margin-right: 10%;
     margin-top: .5em;
@@ -124,7 +124,7 @@ input:focus{
     background: whitesmoke;
 }
 
-input[type="submit"]{
+button{
     width: 200px;
     height: 50px;
     font-family: inherit;
@@ -137,8 +137,17 @@ input[type="submit"]{
     color: whitesmoke;
 }
 
-input[type="submit"]:hover,
-input[type="submit"]:active{
+span{
+    color: red;
+    visibility: hidden;
+}
+
+.visible{
+    visibility: visible;
+}
+
+button:hover,
+button:active{
     border: 2px solid var(--theme-blue);
     background: #1f5d7c52;
     color: var(--theme-blue);
@@ -148,9 +157,9 @@ input[type="submit"] + p{
     padding-bottom: 2em;
 }
 
-.error{
-    
 
+.error{
+    border: 1px solid red;
 }
 
 @media(max-width:375px){
