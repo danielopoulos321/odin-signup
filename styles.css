@@ -20,6 +20,7 @@ a{
     background-position: 50%;
     background-size: cover;
     min-height: 100vh;
+    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.219);
 }
 
 .logo-container img{
@@ -140,6 +141,7 @@ button{
 span{
     color: red;
     visibility: hidden;
+    padding-bottom: 1em;
 }
 
 .visible{
@@ -162,7 +164,7 @@ input[type="submit"] + p{
     border: 1px solid red;
 }
 
-@media(max-width:375px){
+@media(max-width:475px){
     body{
         flex-direction: column;
     }
@@ -173,5 +175,36 @@ input[type="submit"] + p{
 
     .logo{
         margin-top: 0;
+    }
+
+    .padd{
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    .topPar{
+        padding-top: 1em;
+    }
+
+    .item{
+        flex: 100%;
+    }
+
+    input{
+        margin-right: 0
+    };
+
+    .logIn{
+        display: flex;
+        flex-direction: column;
+    }
+
+    button{
+        width: 100%;
+    }
+
+    button + p{
+        padding-bottom: 2em;
+        text-align: center;
     }
 }
