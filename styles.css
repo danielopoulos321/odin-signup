@@ -171,6 +171,8 @@ input[type="submit"] + p{
 
     .logo-container{
         min-height: auto;
+        min-width: 410px;
+
     }
 
     .logo{
@@ -178,8 +180,9 @@ input[type="submit"] + p{
     }
 
     .padd{
-        padding-left: 3em;
-        padding-right: 3em;
+        padding-top: 1em;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
     }
 
     .topPar{
@@ -199,6 +202,10 @@ input[type="submit"] + p{
     .logIn{
         display: flex;
         flex-direction: column;
+    }
+
+    h2{
+        font-size: 1.25em;
     }
 
     button{
